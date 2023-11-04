@@ -7,43 +7,237 @@
     font-family: poppins;
 }
 
+body{
+    font-family: poppins;
+    color: white;
+}
 
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto ;
+    justify-content: space-between;
+}
+.text-box{
+    /* float: right; */
+    position: relative;
+    bottom: 0px;
+}
 
-.cover-page{
+.black{
     width: 100%;
     height: 100vh;
     background-color: black;
-    
-
+    /* z-index: -2; */
+    overflow-y: hidden;
 }
 .nav-bar{
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   z-index: 100;
+}
+.nav-container{
+    padding:60px 0px ;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
     width: 90%;
-    background-color:rgba(0, 0, 0, 0.4);
+    height: 100px;
+    background-color:rgba(0 , 0, 0, 0.7);
+    /* background-color: red; */
     margin: 0px auto;
     list-style: none;
+    /* z-index: 100; */
+    
+    border-radius: 50px;
+    margin: 0px auto;
+    /* text-align: center; */
 }
 .cover-page img{
     margin: 0;
     /* background-color: blue;   */
+    padding: 0;
+    width: 150px;
+    padding-top: 10px;
+    
 }
 nav{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    /* width:60%; */
     align-items: center;
     font-size: 20px;
+    
 }
-ul{
+.cover-page ul{
     display: flex;
     justify-content: space-evenly;
 
+}
+.cover-page li{
+    margin-left: 30px;
+}
+.cover-page{
+    padding: 10px;
 }
 .login-btn{
     border-radius: 50px;
     outline: 3px solid white;
     padding:10px 25px;
+    margin-right: 30px;
+    transition: 1s;
 }
+.login-btn:hover{
+    outline: 3px solid #FE4F31;
+
+}
+.orange-sqr{
+    width: 1000px;
+    height: 800px;
+    background-color: #FE4F31;
+    transform: rotate(-45deg);
+    /* position: fixed; */
+    position: absolute;
+    left: -500px;
+    /* z-index: -1; */
+   border-radius:100px;
+   overflow: hidden;
+
+}
+.text{
+    text-align: right;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+}
+.title{
+    font-size: 100px;
+    margin-right: 20px;
+    letter-spacing: 10px;
+    padding: 0;
+}
+.text p{
+    font-size: 30px;
+    padding-top: 0;
+    /* margin-top: -20px; */
+}
+#title-page{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.about-us{
+    height: 100vh;
+    background-color: black;
+    text-align: right;
+}
+.about-us h2{
+    font-size: 80px;
+    color: #FE4F31;
+    margin-right: 0px;
+}
+.about-us{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: white ;
+}
+.about-us-container{
+    width:700px;
+    /* float:right; */
+    margin-right: 100px;
+}
+.about-us-container p{
+font-size: 25px;
+    
+}
+.card-section{
+    background-color: black;
+    height: 100vh;
+    
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-section img{
+    /* text-align: center; */
+    margin: auto 0px;
+}
+.logo-middle{
+    width: 300px;
+}
+.card-container{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    width: 50%;
+    outline: 2px solid white;
+    padding: 20px;
+    height: auto;
+    margin: 20px;
+    border-radius: 30px;
+    transition: 1s;
+    background-color: black;
+    /* color: #fff; Default text color */
+    transition: .5s;
+}
+.card h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #FE4F31;
+    
+}
+.pWrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card p{
+    font-size: 20px;
+    text-align: center;
+width: 90%;
+    
+}
+.card:hover{
+    outline: 8px solid #FE4F31; /* Background color on hover (red) */
+    /* color: #000; */
+    cursor: pointer;
+    /* transition: color 0.5s; */
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: 1s ;
+}
+nav a:hover{
+    color: #FE4F31;
+}
+.features{
+    height: 100vh;
+    background-color: black;
+}
+hr{
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Centers the division line horizontally */
+    border-bottom: 3px solid #FE4F31; /* Adds the line - change color or style as needed */
+    padding: 0; /* Reset padding */
+    margin-top: 20px; /* For spacing if needed */
+    margin-bottom: 20px; /* For spacing if needed */
+  }
+  body{
+    background-color: black;
+  }
+  
+  
