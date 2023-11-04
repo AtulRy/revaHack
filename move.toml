@@ -1,0 +1,10 @@
+[package]
+name = "aptos_by_examples"
+version = "0.0.0"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "mainnet" }
+
+[addresses]
+my_addrx = "0x498045b3e201459aab8bba7ef3008ddebeecbd219aeeca6cc9bfb8818a11e15e"
+std = "0x1"
